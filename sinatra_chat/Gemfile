@@ -1,0 +1,11 @@
+#source "http://rubygems.org"
+source "http://ruby.taobao.org"
+
+gem 'debugger'
+gem "haml"
+# Ruby C bindings to the excellent Yajl JSON stream-based parser library.
+gem "yajl-ruby"
+gem "thin"
+gem "sinatra"
+# EventMachine based WebSocket server
+gem "em-websocket"

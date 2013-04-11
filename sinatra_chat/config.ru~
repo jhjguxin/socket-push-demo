@@ -1,0 +1,39 @@
+$:.unshift File.join(File.dirname(__FILE__))
+
+require 'rubygems'
+require 'logger'
+# Set up gems listed in the Gemfile.
+require 'bundler/setup'
+
+# The "Bundler.require" line will require all your dependencies.
+Bundler.require
+
+set :raise_errors, true
+
+
+class Server
+  configure :production do
+    set :haml, { :ugly=>true }
+    set :clean_trace, true
+    Dir.mkdir('log') unless File.exist?('log')
+
+    $logger = Logger.new("./log/#{Sinatra::Base.environment}.log",'weekly')
+    $logger.level = Logger::WARN
+
+    # Spit stdout and stderr to a file during production
+    # in case something goes wrong
+    $stdout.reopen("./log/#{Sinatra::Base.environment}_stdout.log", "w")
+    $stdout.sync = true
+    $stderr.reopen($stdout)
+  end
+
+  configure :development do
+    $logger = Logger.new(STDOUT)
+  end
+end
+
+set :sessions, true
+set :logging, true
+set :dump_errors, false
+
+require "server"

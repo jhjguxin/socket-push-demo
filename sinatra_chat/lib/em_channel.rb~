@@ -1,0 +1,21 @@
+$channel = EM::Channel.new
+domain = {:host => '0.0.0.0', :port => 8080}
+
+EventMachine.run do
+  EventMachine::WebSocket.start(domain) do |ws|
+      ws.onopen {
+        sid = $channel.subscribe { |msg| ws.send msg }
+        $channel.push "#{sid} connected!"
+
+        ws.onmessage { |msg|
+          $channel.push "<#{sid}>: #{msg}"
+        }
+
+        ws.onclose {
+          $channel.unsubscribe(sid)
+        }
+      }
+
+  end
+  run Server
+end

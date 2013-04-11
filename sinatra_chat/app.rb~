@@ -1,0 +1,21 @@
+#require 'rubygems'
+#require 'em-websocket'
+#require 'yajl'
+#require 'haml'
+#require 'sinatra/base'
+#require 'thin'
+=begin
+
+=end
+class Server < Sinatra::Application
+  debugger
+  #EventMachine.run
+
+  get '/' do
+      haml :index
+  end
+
+  post '/' do
+    $channel.push "POST>: #{params[:text]}"
+  end
+end
