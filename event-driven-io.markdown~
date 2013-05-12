@@ -35,3 +35,8 @@ https://github.com/faye/faye
 http://railscasts.com/episodes/316-private-pub
 https://github.com/ryanb/private_pub
 https://github.com/fredwu/bustle
+
+#### resources
+
+http://database.51cto.com/art/201107/276333.htm
+https://github.com/mloughran/em-hiredis
