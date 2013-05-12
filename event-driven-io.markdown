@@ -33,4 +33,5 @@ http://blog.nosqlfan.com/html/2902.htmls
 https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=pub%2Fsub+
 https://github.com/faye/faye
 http://railscasts.com/episodes/316-private-pub
+https://github.com/ryanb/private_pub
 https://github.com/fredwu/bustle
