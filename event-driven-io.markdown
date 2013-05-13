@@ -24,19 +24,19 @@ sudo pip install twisted
 
 #### Demo
 
-http://railscasts.com/episodes/260-messaging-with-faye
-https://github.com/kandanapp/kandan
-http://ruby-china.org/topics/8520
-https://gist.github.com/jhjguxin/5563076
-https://gist.github.com/technoweenie/1031540
-http://blog.nosqlfan.com/html/2902.htmls
-https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=pub%2Fsub+
-https://github.com/faye/faye
-http://railscasts.com/episodes/316-private-pub
-https://github.com/ryanb/private_pub
-https://github.com/fredwu/bustle
+*  http://railscasts.com/episodes/260-messaging-with-faye
+*  https://github.com/kandanapp/kandan
+*  http://ruby-china.org/topics/8520
+*  https://gist.github.com/jhjguxin/5563076
+*  https://gist.github.com/technoweenie/1031540
+*  http://blog.nosqlfan.com/html/2902.htmls
+*  https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&q=pub%2Fsub+
+*  https://github.com/faye/faye
+*  http://railscasts.com/episodes/316-private-pub
+*  https://github.com/ryanb/private_pub
+*  https://github.com/fredwu/bustle
 
 #### resources
 
-http://database.51cto.com/art/201107/276333.htm
-https://github.com/mloughran/em-hiredis
+*  http://database.51cto.com/art/201107/276333.htm
+*  https://github.com/mloughran/em-hiredis
